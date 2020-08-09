@@ -24,7 +24,7 @@ export class TodoComponent implements OnInit {
     //   date: '2020-08-09'
     // };
     this.todos = TODOS; //video 12
-    this.selectedTodo=TODOS[0];
+    //this.selectedTodo=TODOS[0]; //video 14
   }
   onSelect(todo: TodoModel){//video 14
     this.selectedTodo = todo;
