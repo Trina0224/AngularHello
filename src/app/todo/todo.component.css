@@ -1,0 +1,11 @@
+#idform{
+    display: flex;
+    flex-direction: column;
+}
+
+#todo{
+    border: lightgray solid 0.5px;
+    border-radius: 2px;
+    margin-bottom: 1em;
+    padding: 0 1em;
+}

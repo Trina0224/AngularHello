@@ -1,0 +1,45 @@
+<h1>{{appName}}</h1>
+<!-- <p>todo works!</p>
+
+<h2>{{todo.name}}</h2>
+<p>ID: {{todo.id}}</p>
+<p>Due Date: {{todo.date}}</p>
+<p>Due Date: {{todo.date| date }} </p> -->
+
+<br>
+<h3>Video 10</h3>
+
+<!-- <form id="idform">
+
+<mat-form-field>
+    <input type="text" 
+    matInput 
+    placeholder="Enter Todo" 
+    name="name" 
+    [(ngModel)]="todo.name">
+</mat-form-field>
+<mat-form-field>
+    <input matInput [matDatepicker]="picker" placeholder="Choose a date">
+    <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+    <mat-datepicker #picker></mat-datepicker>
+</mat-form-field>
+
+<button mat-raised-button color="primary">Add Todo</button>
+</form>
+
+<h3>Video 11</h3>
+<p>{{todo.name}}</p> -->
+
+<!-- Video 12/13 -->
+<div id="list">
+    <div id ="todo" *ngFor="let todo of todos" (click)="onSelect(todo)">
+        <p style="margin-bottom: 0;">{{todo.id}} {{todo.name}}</p>
+        <p style="margin-top: 0; font-size: 10px;"><small>{{todo.date | date}}</small></p>
+
+    </div>
+</div>
+
+<h2>Selected Todo</h2>
+<p>{{selectedTodo.name}}</p>
+<p>{{selectedTodo.date}}</p>
+
