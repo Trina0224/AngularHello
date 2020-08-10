@@ -1,7 +1,3 @@
-#idform{
-    display: flex;
-    flex-direction: column;
-}
 
 #todo{
     border: lightgray solid 0.5px;

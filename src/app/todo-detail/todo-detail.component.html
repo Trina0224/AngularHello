@@ -1,1 +1,26 @@
-<p>todo-detail works!</p>
+<form id="idform" *ngIf="todoChild">
+    <h2>Selected TODO</h2>
+    <mat-form-field>
+        <input type="text" 
+        matInput 
+        placeholder="Enter Todo" 
+        name="name" 
+        [(ngModel)]="todoChild.name">
+    </mat-form-field>
+
+    <mat-form-field>
+        <input 
+        matInput 
+        [matDatepicker]="picker" 
+        placeholder="Choose a date"
+        name="date"
+        [(ngModel)]="todoChild.date">
+    
+        <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+        <mat-datepicker #picker></mat-datepicker>
+    </mat-form-field>
+    
+    <button mat-raised-button color="primary" style="background-color: #aa96da;">Update Todo</button>
+    </form>
+    <br>
+    

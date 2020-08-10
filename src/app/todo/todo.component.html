@@ -7,36 +7,17 @@
 <p>Due Date: {{todo.date| date }} </p> -->
 
 <br>
-<h3>Video 15</h3>
+<h3>Video 18</h3>
 
-<form id="idform" *ngIf="selectedTodo">
-<h2>Selected TODO</h2>
-<mat-form-field>
-    <input type="text" 
-    matInput 
-    placeholder="Enter Todo" 
-    name="name" 
-    [(ngModel)]="selectedTodo.name">
-</mat-form-field>
-<mat-form-field>
-    <input 
-    matInput 
-    [matDatepicker]="picker" 
-    placeholder="Choose a date"
-    name="date"
-    [(ngModel)]="selectedTodo.date">
+<app-todo-detail *ngIf="selectedTodo" [todoChild]="selectedTodo"></app-todo-detail>
 
-    <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
-    <mat-datepicker #picker></mat-datepicker>
-</mat-form-field>
-
-<button mat-raised-button color="primary">Update Todo</button>
-</form>
+<!-- Video 18 Move to child component -->
 
 <!-- <h3>Video 11</h3>
 <p>{{todo.name}}</p> -->
 
 <!-- Video 12/13 -->
+<h1>Todo List</h1>
 <div id="list">
     <!-- <div id ="todo" 
     *ngFor="let todo of todos" 

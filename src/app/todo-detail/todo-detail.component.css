@@ -1,0 +1,4 @@
+#idform{
+    display: flex;
+    flex-direction: column;
+}
