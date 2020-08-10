@@ -11,11 +11,13 @@ import { MatNativeDateModule } from '@angular/material/core';
 import {MatInputModule} from '@angular/material/input';
 import {MatButtonModule} from '@angular/material/button';
 import { FormsModule } from '@angular/forms';
+import { TodoDetailComponent } from './todo-detail/todo-detail.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    TodoComponent
+    TodoComponent,
+    TodoDetailComponent
   ],
   imports: [
     BrowserModule,

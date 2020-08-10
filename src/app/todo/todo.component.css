@@ -9,3 +9,12 @@
     margin-bottom: 1em;
     padding: 0 1em;
 }
+
+.selected{
+    background-color:#fcbad3;
+    transform: scale(1.01);
+}
+
+.unselected{
+    background-color: #a8d8ea ;
+}
